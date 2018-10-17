@@ -1,8 +1,24 @@
 @font-face {
-  font-family: Ugly Qua;
-  src: url(./text/UglyQua.tff);
+  font-family: UglyQua;
+  src: url(../text/UglyQua.tff);
 }
 
-h1 {
-  font-family: Ugly Qua;
+.port.header {
+  width: 100%;
+  font-family: UglyQua;
+}
+
+.port.header.title {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  font-size: 72pt;
+}
+
+.port.header.sub1 {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  font-size: 18pt;
+  margin-top: -10pt;
 }
