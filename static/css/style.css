@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Ugly Qua";
+  src: "./text/UglyQua.ttf";
+}
+
+h1 {
+  font-family: "Ugly Qua";
+}
