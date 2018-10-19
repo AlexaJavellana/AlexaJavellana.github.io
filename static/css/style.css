@@ -1,5 +1,7 @@
 html {
   background-color: #f5f1ee;
+  /* width: 100%;
+  height: 100%;  */
 }
 
 @font-face {
@@ -11,37 +13,88 @@ html {
   font-family: Beauty;
   src: url(BeautyDemo.tff);
 }
+/* welcome page main divs */
+.flower.div {
+  width: 40%; 
+  float: left;
+  height: 100%;
+}
 
 .flower {
-  width: 30%; 
-  float: left;
+  height: 400px;
+  width: 320px;
 }
 
 .writing {
   color: #2a2a2a;
-  width: 70%;
+  width: 60%;
   float: left;
-  margin-top: 250px;
+  margin-top: 260px;
   height: 30%;
 }
+/* end main divs */
 
-.port.header.title {
-  font-size: 100pt;
-  font-family: Beauty;
+#flowerID {
+  float: right;
+  padding-top: 70px;
+  animation-delay: 0s;
 }
 
-.port.header.sub1 {
+#welcomeID {
+  font-size: 100pt;
+  font-family: Beauty;
+  animation-delay: 1.5s;
+}
+
+#nameID {
   padding-left: 10px;
   font-family: UglyQua;
   font-size: 15pt;
   margin-top: -50pt;
+  animation-delay: 3s;
 }
 
-.port.header.sub2 {
+#portID {
   padding-left: 20px;
   font-family: UglyQua;
   font-size: 15pt;
   margin-top: -8pt;
+  animation-delay: 4s;
 }
 
-/* welcome char1-char7 */
+#arrowID {
+  width: 100px;
+  height: 20px;
+  padding-top: 5px;
+  padding-left: 75px;
+  animation-delay: 5s;
+}
+
+/* fade in elements of portfolio landing */
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fade 1s ease-in-out 3s;
+  animation-fill-mode: forwards;  
+}
+
+/* path animation */
+.st0 {
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+  animation-delay: 5.5s;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/* end path animation */
