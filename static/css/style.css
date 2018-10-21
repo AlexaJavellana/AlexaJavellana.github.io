@@ -4,6 +4,7 @@ html {
   height: 100%;  */
 }
 
+
 @font-face {
   font-family: UglyQua;
   src: url(UglyQua.tff);
@@ -20,34 +21,53 @@ html {
   height: 100%;
 }
 
-.flower {
+.rose {
+  height: 380px;
+  width: 300px;
+}
+
+.helichrysum {
   height: 400px;
   width: 320px;
 }
 
 .writing {
-  color: #2a2a2a;
-  width: 60%;
+  height: 100%;
+  width: 45%;
   float: left;
-  margin-top: 260px;
-  height: 30%;
+}
+
+#welcomepg {
+  position: absolute;
+  width: 960px;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 13%;
 }
 
 #aboutpg {
   display: none;
+  position: absolute;
+  width: 960px;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 13%;
 }
 
 .aboutwriting {
-  color: #2a2a2a;
-  width: 32%;
+  width: 45%;
+  height: 100%;
   float: left;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 /* end main divs */
 
 #flowerID {
   float: right;
-  padding-top: 70px;
   animation-delay: 0s;
 }
 
@@ -55,28 +75,39 @@ html {
   font-size: 100pt;
   font-family: Beauty;
   animation-delay: 1.5s;
+  margin-top: 150px;
+  margin-left: 30px
 }
 
 #nameID {
-  padding-left: 10px;
+  padding-left: 35px;
   font-family: UglyQua;
   font-size: 15pt;
-  margin-top: -50pt;
   animation-delay: 2.5s;
+  margin-top: -70px;
 }
 
 #portID {
-  padding-left: 20px;
+  padding-left: 60px;
   font-family: UglyQua;
   font-size: 15pt;
-  margin-top: -8pt;
   animation-delay: 3.5s;
+  margin-top: -10px;
+}
+
+#firstArrow {
+  width: 100%;
+  height: 55px;
+}
+
+#secondArrow {
+  width: 100%;
+  height: 55px;
 }
 
 #arrowID {
   width: 100px;
   height: 20px;
-  padding-top: 5px;
   padding-left: 75px;
   animation-delay: 4s;
 }
@@ -92,20 +123,28 @@ html {
 #enter {
   font-size: 8pt;
   font-family: UglyQua;
-  width: 35%;
   text-align: center;
-  padding-top: 35px;
   display: none;
+}
+
+#enterBox {
+  width: 50%;
+  height: 10px;
+  display: block;
+
 }
 
 #projects {
   font-size: 8pt;
   font-family: UglyQua;
-  width: 35%;
   text-align: center;
-  padding-top: 35px;
-  padding-left: 66px;
   display: none;
+}
+
+#projectBlock {
+  width: 50%;
+  height: 10px;
+  display: block;
 }
 
 #aboutmeID {
