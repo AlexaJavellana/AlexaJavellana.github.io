@@ -1,6 +1,8 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="static/js/script.js"></script>
 </head>
 
 <body>
@@ -30,19 +32,6 @@
       </div>
       <div id="enter">
         enter
-        <script>
-        var e = document.getElementById('arrowID');
-        e.onmouseover = function() {
-          document.getElementById('enter').style.display = 'block';
-        }
-        e.onmouseout = function() {
-          document.getElementById('enter').style.display = 'none';
-        }
-        e.onclick = function() {
-          document.getElementById('welcomepg').style.display = 'none';
-          document.getElementById('aboutpg').style.display = 'block';
-        }
-        </script>
       </div>
     </div>
   </div>
@@ -51,21 +40,12 @@
   <div id="aboutpg">
     <div class="flower div">
       <div class="fadeIn" id="flowerID">
-      <img src="rosa.png" class="flower"/>
+      <img src="helichrysum.png" class="flower"/>
       </div>
     </div>
     <div class="aboutwriting">
-      <div id="aboutmeID">about me</div>
-      <!-- <div id="abtparaID">
-        I am a software developer in my senior year at Marist College, NY. Familiar with 
-        full stack development and infrastructure in languages such as Python, Java, Javascript, 
-        HTML/CSS, I have worked for companies in NYC, Northeastern USA and Tokyo. A cooperative
-        team member, my technical flexibility has worked for the best, as my role can successfully adapt 
-        to a project's requirements. Having worked for IBM as an implementative programmer, a UI/UX 
-        designer and web developer in Japan, and currently the data science lead in building a 
-        campus-wide dashboard for current students, only time will tell what I will do next.
-      </div> -->
-      <div id="abtparaID">
+      <div id="aboutmeID" class="fadeIn">about me</div>
+      <div id="abtparaID" class="fadeIn">
         As a software developer in my senior year at Marist College, NY, <br/>
         familiar with full stack development in languages like, <br/>
         Python, Java, Javascript, HTML/CSS, <br/>
@@ -78,7 +58,6 @@
         campus wide dashboard for current Marist students, <br/>
         only time will tell where I will be. <br/>
       </div>
-
       <div class="fadeIn" id="aboutArrowID">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 94.8 50" style="enable-background:new 0 0 94.8 50;" xml:space="preserve">

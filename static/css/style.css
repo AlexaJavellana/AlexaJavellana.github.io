@@ -62,7 +62,7 @@ html {
   font-family: UglyQua;
   font-size: 15pt;
   margin-top: -50pt;
-  animation-delay: 3s;
+  animation-delay: 2.5s;
 }
 
 #portID {
@@ -70,7 +70,7 @@ html {
   font-family: UglyQua;
   font-size: 15pt;
   margin-top: -8pt;
-  animation-delay: 4s;
+  animation-delay: 3.5s;
 }
 
 #arrowID {
@@ -78,15 +78,15 @@ html {
   height: 20px;
   padding-top: 5px;
   padding-left: 75px;
-  animation-delay: 5.5s;
+  animation-delay: 4s;
 }
 
 #aboutArrowID {
   width: 100px;
   height: 20px;
-  padding-top: 10px;
-  padding-left: 100px;
-  animation-delay: 0s;
+  padding-top: 3px;
+  padding-left: 75px;
+  animation-delay: 3s;
 }
 
 #enter {
@@ -104,7 +104,7 @@ html {
   width: 35%;
   text-align: center;
   padding-top: 35px;
-  padding-left: 100px;
+  padding-left: 66px;
   display: none;
 }
 
@@ -113,6 +113,7 @@ html {
   font-size: 80pt;
   width: 100%;
   text-align: right;
+  animation-delay: 1.5s;
 }
 
 #abtparaID {
@@ -121,10 +122,7 @@ html {
   font-size: 10pt;
   margin-top: -35px;
   width: 100%;
-}
-
-#quote {
-  font-size: 30pt;
+  animation-delay: 2.5s;
 }
 
 /* fade in elements of portfolio landing */
@@ -146,7 +144,7 @@ html {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 5s linear forwards;
-  animation-delay: 5.5s;
+  animation-delay: 4.8s;
 }
 
 .st1 {
@@ -155,7 +153,7 @@ html {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 5s linear forwards;
-  animation-delay: 1s;
+  animation-delay: 3.8s;
 }
 
 @keyframes dash {
