@@ -2,6 +2,12 @@
   
 $(function(){
   //Function for hovering on arrow elements
+  $('#arrowID').hover(function(){
+    $('#enter').show();
+    }, function(){
+    $('#enter').hide();
+  });
+
   $('#arrowID').click(function(){
     $('#welcomepg').hide();
     aboutShow();
@@ -11,12 +17,7 @@ $(function(){
     $('#aboutpg').show();
   }
 
-  $('.st0').on("animationend", function(){
-    $('#arrowID').hover(function(){
-      $('#enter').show();
-      }, function(){
-      $('#enter').hide();
-    });
+  $('#st0').on("animationend", function(){
+    $('#enter').show();
   });
-
 });
