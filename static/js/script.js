@@ -2,11 +2,11 @@
   
 $(function(){
   //Function for hovering on arrow elements
-  // $('#arrowID').hover(function(){
-  //   $('#enter').show();
-  //   }, function(){
-  //   $('#enter').hide();
-  // });
+  $('#arrowID').hover(function(){
+    $('#enter').show();
+    }, function(){
+    $('#enter').hide();
+  });
 
   $('#arrowID').click(function(){
     $('#welcomepg').hide();
@@ -17,19 +17,24 @@ $(function(){
     $('#aboutpg').show();
   }
 
-  $('.st1').on("webkitAnimationEnd oanimationend msAnimationEnd animationend", function() {
-    $('#aboutArrowID').hover(function() {
-      $('#projects').show();
-      }, function(){
-      $('#projects').hide();  
-    });
-  });
+  // $('.st1').on("webkitAnimationEnd oanimationend msAnimationEnd animationend", function() {
+  //   $('#aboutArrowID').hover(function() {
+  //     $('#projects').show();
+  //     }, function(){
+  //     $('#projects').hide();  
+  //   });
+  // });
 
-  $('.st0').on("webkitAnimationEnd oanimationend msAnimationEnd animationend", function(){
-    $('#arrowID').hover(function(){
-      $('#enter').show();
-      }, function(){
-      $('#enter').hide();
-    });
+  // $('.st0').on("webkitAnimationEnd oanimationend msAnimationEnd animationend", function(){
+  //   $('#arrowID').hover(function(){
+  //     $('#enter').show();
+  //     }, function(){
+  //     $('#enter').hide();
+  //   });
+  // });
+  $('#aboutArrowID').hover(function() {
+    $('#projects').show();
+    }, function(){
+    $('#projects').hide();  
   });
 });
