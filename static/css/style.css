@@ -270,4 +270,12 @@ html {
     stroke-dashoffset: 0;
   }
 }
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
 /* end path animation */
