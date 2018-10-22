@@ -164,6 +164,60 @@ html {
   animation-delay: 2.5s;
 }
 
+#projectspg {
+  display: none;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: Beauty;
+  font-size: 30pt;
+}
+
+#leftProjs {
+  padding-top: 100px;
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+#projImg {
+  float: left;
+  width: 55%;
+  padding-top: 30px;
+}
+
+#rightProjs {
+  padding-top: 100px;
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+#votre {
+  width: 100%;
+  height: 90%;
+  animation-delay: 0s;
+}
+
+#ibm {
+  animation-delay: .5s;
+}
+#serenity {
+  animation-delay: 1s;
+}
+#datacens {
+  animation-delay: 1.5s;
+}
+#design {
+  animation-delay: 2s;
+}
+#tokyo {
+  animation-delay: 2.5s;
+}
+#nyc {
+  animation-delay: 3s;
+}
+
 /* fade in elements of portfolio landing */
 @keyframes fade {
   from {opacity: 0;}
@@ -173,6 +227,12 @@ html {
 .fadeIn {
   opacity: 0;
   animation: fade 1s ease-in-out 2s;
+  animation-fill-mode: forwards;  
+}
+
+.fadeInSlow {
+  opacity: 0;
+  animation: fade 4s ease-in-out 5s;
   animation-fill-mode: forwards;  
 }
 
@@ -193,6 +253,16 @@ html {
   stroke-dashoffset: 1000;
   animation: dash 5s linear forwards;
   animation-delay: 3.8s;
+}
+
+.oh {
+  width: 100px;
+  height: 100px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+  animation-delay: 0s;
+  float: left;
 }
 
 @keyframes dash {

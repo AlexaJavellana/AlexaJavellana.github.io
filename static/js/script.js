@@ -17,6 +17,14 @@ $(function(){
     $('#aboutpg').show();
   }
 
+  $('#aboutArrowID').click(function(){
+    $('#aboutpg').hide();
+    projectsShow();
+  });
+
+  function projectsShow() {
+    $('#projectspg').show();
+  }
   // $('.st1').on("webkitAnimationEnd oanimationend msAnimationEnd animationend", function() {
   //   $('#aboutArrowID').hover(function() {
   //     $('#projects').show();
