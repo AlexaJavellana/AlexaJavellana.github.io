@@ -45,4 +45,23 @@ $(function(){
     }, function(){
     $('#projects').hide();  
   });
+
+  $('#ibm').click(function() {
+    location.href = "test.html";
+  });
+  $('#serenity').click(function() {
+    location.href = "test.html";
+  });
+  $('#datacens').click(function() {
+    location.href = "test.html";
+  });
+  $('#design').click(function() {
+    location.href = "test.html";
+  });
+  $('#tokyo').click(function() {
+    location.href = "test.html";
+  });
+  $('#nyc').click(function() {
+    location.href = "test.html";
+  });
 });
