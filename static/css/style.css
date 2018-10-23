@@ -7,12 +7,12 @@ html {
 
 @font-face {
   font-family: UglyQua;
-  src: url(UglyQua.tff);
+  src: url(./UglyQua.tff);
 }
 
 @font-face {
   font-family: Beauty;
-  src: url(BeautyDemo.tff);
+  src: url(./BeautyDemo.tff);
 }
 /* welcome page main divs */
 .flower.div {
@@ -255,15 +255,6 @@ html {
   animation-delay: 3.8s;
 }
 
-.oh {
-  width: 100px;
-  height: 100px;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 5s linear forwards;
-  animation-delay: 0s;
-  float: left;
-}
 
 @keyframes dash {
   to {
