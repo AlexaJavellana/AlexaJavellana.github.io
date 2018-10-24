@@ -1,5 +1,3 @@
-//Function for hovering on arrow elements
-  
 $(function(){
   //Function for hovering on arrow elements
   $('#arrowID').hover(function(){
