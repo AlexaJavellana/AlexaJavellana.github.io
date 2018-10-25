@@ -1,15 +1,10 @@
+/************************* general css  *************************/
 html, body {
   background-color: #f5f1ee;
   max-width: 1280px;
   max-height: 618px;
   overflow: hidden;
 }
-
-a {
-  color: black;
-  text-decoration: none; /* no underline */
-}
-
 
 @font-face {
   font-family: UglyQua;
@@ -20,69 +15,20 @@ a {
   font-family: Beauty;
   src: url(./BeautyDemo.ttf);
 }
-/* welcome page main divs */
-.flower.div {
-  width: 40%; 
-  float: left;
-  /* height: 100%; */
-}
 
-.rose {
-  height: 380px;
-  width: 300px;
-}
-
-.helichrysum {
-  height: 380px;
-  width: 300px;
+/************************ welcome page css ************************/
+#welcomepg {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 
 .writing {
   /* height: 100%; */
   width: 60%;
   float: left;
-}
-
-#welcomepg {
-  /* position: absolute; */
-  width: 50%;
-  height: 100%;
-  margin: 0 auto;
-  padding-top: 8%;
-  padding-bottom: 8%;
-  /* padding-left: 13%; */
-}
-
-#aboutpg {
-  display: none;
-  /* position: absolute; */
-  width: 50%;
-  height: 100%;
-  margin: 0 auto;
-  padding-top: 8%;
-  padding-bottom: 8%;
-  /* padding-left: 13%; */
-}
-
-.aboutwriting {
-  width: 60%;
-  height: 100%;
-  float: left;
-  margin-top: 20px;
-}
-/* end main divs */
-
-#flowerID {
-  float: right;
-  animation-delay: 0s;
-}
-
-#welcomeID {
-  font-size: 100pt;
-  font-family: Beauty;
-  animation-delay: 1.5s;
-  margin-top: 150px;
-  margin-left: 30px
 }
 
 #nameID {
@@ -106,24 +52,11 @@ a {
   height: 55px;
 }
 
-#secondArrow {
-  width: 100%;
-  height: 55px;
-}
-
 #arrowID {
   width: 100px;
   height: 20px;
   padding-left: 75px;
   animation-delay: 4s;
-}
-
-#aboutArrowID {
-  width: 100px;
-  height: 20px;
-  padding-top: 3px;
-  padding-left: 75px;
-  animation-delay: 3s;
 }
 
 #enter {
@@ -137,7 +70,67 @@ a {
   width: 50%;
   height: 10px;
   display: block;
+}
+/************************ end welcome page divs ************************/
 
+/************************ flower css for about me and welcome page ************************/
+.helichrysum {
+  height: 380px;
+  width: 300px;
+}
+.rose {
+  height: 380px;
+  width: 300px;
+}
+#flowerID {
+  float: right;
+  animation-delay: 0s;
+}
+.flower.div {
+  width: 40%; 
+  float: left;
+  /* height: 100%; */
+}
+/************************ end flower css ************************/
+
+/************************ about page divs ************************/
+#aboutpg {
+  display: none;
+  /* position: absolute; */
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  /* padding-left: 13%; */
+}
+
+.aboutwriting {
+  width: 60%;
+  height: 100%;
+  float: left;
+  margin-top: 20px;
+}
+
+#welcomeID {
+  font-size: 100pt;
+  font-family: Beauty;
+  animation-delay: 1.5s;
+  margin-top: 150px;
+  margin-left: 30px
+}
+
+#secondArrow {
+  width: 100%;
+  height: 55px;
+}
+
+#aboutArrowID {
+  width: 100px;
+  height: 20px;
+  padding-top: 3px;
+  padding-left: 75px;
+  animation-delay: 3s;
 }
 
 #projects {
@@ -169,7 +162,9 @@ a {
   width: 100%;
   animation-delay: 2.5s;
 }
+/************************ end about me css  ************************/
 
+/************************ projects page css ************************/
 #projectspg {
   display: none;
   width: 90%;
@@ -224,7 +219,12 @@ a {
   animation-delay: 3s;
 }
 
-/* fade in elements of portfolio landing */
+#ibmText {
+  display: none;
+}
+/************************ end projects pages css  ************************/
+
+/************************ animation block for fades and draws  ************************/
 @keyframes fade {
   from {opacity: 0;}
   to {opacity: 1;}
@@ -242,7 +242,6 @@ a {
   animation-fill-mode: forwards;  
 }
 
-/* path animation */
 .st0 {
   width: 100%;
   height: 100%;
@@ -261,6 +260,15 @@ a {
   animation-delay: 3.8s;
 }
 
+.st2 {
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+  animation-delay: 1.8s;
+}
+
 
 @keyframes dash {
   to {
@@ -269,10 +277,10 @@ a {
 }
 
 .zoom {
-  transition: transform .2s; /* Animation */
+  transition: transform .2s; 
 }
 
 .zoom:hover {
   transform: scale(1.1);
 }
-/* end path animation */
+/************************* end animation block ************************/

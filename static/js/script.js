@@ -45,11 +45,24 @@ $(function(){
   });
 
   $('#ibm').click(function() {
-    location.href = "test.html";
+    $('#projectspg').hide();
+    ibmShow();
   });
+
+  function ibmShow() {
+    $('#ibmPg').show();
+  }
+
   $('#serenity').click(function() {
-    location.href = "test.html";
+    $('#projectspg').hide();
+    ibmShow();
   });
+
+  function serenityShow() {
+    $('#serenityPg').show();
+  }
+
+
   $('#datacens').click(function() {
     location.href = "test.html";
   });
