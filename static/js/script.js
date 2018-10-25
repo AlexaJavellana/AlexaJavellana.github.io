@@ -50,7 +50,7 @@ $(function(){
   });
 
   function ibmShow() {
-    $('#ibmPg').show();
+    $('.ibmPg').show();
   }
 
   $('#serenity').click(function() {
