@@ -81,15 +81,69 @@ $(function(){
     $('#serenityPast').hide();  
   });
 
-  $('#datacens').click(function() {
-    location.href = "test.html";
+  $('#serenityrightArrow').click(function() {
+    $('.serenityPg').hide();
+    designShow();
   });
+
+  $('#serenityrightArrow').hover(function() {
+    $('#serenityNext').show();
+    }, function(){
+    $('#serenityNext').hide();  
+  });
+
+  function designShow() {
+    $('.designPg').show();
+  }
+
   $('#design').click(function() {
-    location.href = "test.html";
+    $('#projectspg').hide();
+    designShow();
   });
+
+  $('#designleftArrow').hover(function() {
+    $('#designPast').show();
+    }, function(){
+    $('#designPast').hide();  
+  });
+
+  $('#designleftArrow').click(function() {
+    $('.designPg').hide();
+    serenityShow();
+  });
+  
+  $('#designrightArrow').hover(function() {
+    $('#designNext').show();
+    }, function(){
+    $('#designNext').hide();  
+  });
+
+  $('#designrightArrow').click(function() {
+    $('.designPg').hide();
+    tokyoShow();
+  });
+
+  function tokyoShow() {
+    $('.tokyoPg').show();
+  }
+  
   $('#tokyo').click(function() {
-    location.href = "test.html";
+    $('#projectspg').hide();
+    tokyoShow();
   });
+
+  $('#tokyoleftArrow').hover(function() {
+    $('#tokyoPast').show();
+    }, function(){
+    $('#tokyoPast').hide();  
+  });
+
+  $('#tokyorightArrow').hover(function() {
+    $('#tokyoNext').show();
+    }, function(){
+    $('#tokyoNext').hide();  
+  });
+
   $('#nyc').click(function() {
     location.href = "test.html";
   });
