@@ -144,6 +144,11 @@ $(function(){
     $('#tokyoNext').hide();  
   });
 
+  $('#tokyoleftArrow').click(function() {
+    $('.tokyoPg').hide();
+    designShow();
+  });
+
   $('#nyc').click(function() {
     location.href = "test.html";
   });
