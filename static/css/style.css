@@ -221,7 +221,7 @@ html, body {
 
 /************************ end projects pages css  ************************/
 
-.ibmPg, .serenityPg, .designPg, .tokyoPg {
+.ibmPg, .serenityPg, .designPg, .tokyoPg, .nycPg {
   width: 80%;
   max-height: 618px;
   height: 100%;
@@ -238,7 +238,7 @@ html, body {
   text-align: center;
 }
 
-#serenityContent, #designContent, #tokyoContent {
+#serenityContent, #designContent, #tokyoContent, #nycContent {
   width: 100%;
   height: 100%;
   max-width: 455px;
@@ -247,7 +247,7 @@ html, body {
   padding-top: 3.5em;
 }
 
-#serenityTitleText, #designTitleText, #ibmTitleText {
+#serenityTitleText, #designTitleText, #ibmTitleText, #nycTitleText {
   font-family: Beauty;
   font-size: 80pt;
   animation-delay: 0s;
@@ -268,15 +268,16 @@ html, body {
   animation-delay: 1s;
 }
 
-#serenityText, #designText, #tokyoText {
+#serenityText, #designText, #tokyoText, #nycText {
   font-family: UglyQua;
   font-size: 10pt;
   animation-delay: 1s;
 }
 
-#serenitySlides, #designSlides, #tokyoSlides {
+#serenitySlides, #designSlides, #tokyoSlides, #nycSlides {
   width: 100%;
   height: 190px;
+  /* margin-top: -10px; */
 }
 
 #projectfliparrow {
@@ -285,7 +286,7 @@ html, body {
   animation-delay: 0s;
 }
 
-#ibmleftArrow, #serenityleftArrow, #designleftArrow, #tokyoleftArrow {
+#ibmleftArrow, #serenityleftArrow, #designleftArrow, #tokyoleftArrow, #nycleftArrow {
   float: left;
   width: 25%;
   height: 100%;
@@ -302,7 +303,7 @@ html, body {
   font-size: 8pt;
 }
 
-#ibmHome, #serenityPast, #designPast, #tokyoPast {
+#ibmHome, #serenityPast, #designPast, #tokyoPast, #nycPast {
   float: left;
   width: 10%;
   display: none;

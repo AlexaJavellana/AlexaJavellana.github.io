@@ -149,7 +149,28 @@ $(function(){
     designShow();
   });
 
+  $('#tokyorightArrow').click(function() {
+    $('.tokyoPg').hide();
+    nycShow();
+  });
+
   $('#nyc').click(function() {
-    location.href = "test.html";
+    $('#projectspg').hide();
+    nycShow();
+  });
+
+  function nycShow() {
+    $('.nycPg').show();
+  }
+
+  $('#nycleftArrow').hover(function() {
+    $('#nycPast').show();
+    }, function(){
+    $('#nycPast').hide();  
+  });
+
+  $('#nycleftArrow').click(function() {
+    $('.nycPg').hide();
+    tokyoShow();
   });
 });
