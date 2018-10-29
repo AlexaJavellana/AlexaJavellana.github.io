@@ -274,9 +274,14 @@ html, body {
   animation-delay: 1s;
 }
 
+.slideContainers {
+  width: 455px;
+  height: 190px;
+}
+
 #serenitySlides, #designSlides, #tokyoSlides, #nycSlides {
   width: 100%;
-  height: 190px;
+  height: 100%;
   /* margin-top: -10px; */
 }
 
