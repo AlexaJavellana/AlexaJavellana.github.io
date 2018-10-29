@@ -1,0 +1,3 @@
+#ignore test files, only used for local style changes and illustrator
+#file storage
+test/
