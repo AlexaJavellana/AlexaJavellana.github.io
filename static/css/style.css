@@ -3,7 +3,6 @@ html, body {
   background-color: #f5f1ee;
   max-width: 1280px;
   max-height: 618px;
-  /* overflow: hidden; */
 }
 
 @font-face {
@@ -381,7 +380,7 @@ html, body {
   padding: 5px;
 }
 
-.dot {
+.serenitydot, .tokyodot {
   cursor: pointer;
   height: 8px;
   width: 8px;
@@ -392,7 +391,11 @@ html, body {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active, .serenitydot:hover {
+  background-color: #717171;
+}
+
+.active, .tokyodot:hover {
   background-color: #717171;
 }
 

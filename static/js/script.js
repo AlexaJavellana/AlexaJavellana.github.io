@@ -174,31 +174,60 @@ $(function(){
     tokyoShow();
   });
   /******************* codes for slide shows ********************/ 
+  //realized that for different amounts of images, we're gonna have to instantiate 
+  //codes/functions for each different project page 
   var slideIndex = 1;
-  showSlides(slideIndex);
-
+  
+  //serenity slide show 
+  showSerenitySlides(slideIndex);
   // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
+  function plusSerenitySlides(n) {
+    showSerenitySlides(slideIndex += n);
+  }
+  
+  $('.prev.serenity').click(function() { 
+    plusSerenitySlides(-1);
+  });
+
+  $('.next.serenity').click(function() { 
+    plusSerenitySlides(1);
+  });
+
+  function showSerenitySlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("serenitySlide");
+    var dots = document.getElementsByClassName("serenitydot");
+    if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block"; 
+    dots[slideIndex-1].className += " active";
   }
 
-  // // Thumbnail image controls
-  // function currentSlide(n) {
-  //   showSlides(slideIndex = n);
-  // }
-
-  $('.prev').click(function() { 
-    plusSlides(-1);
+  //tokyo slide show 
+  showTokyoSlides(slideIndex);
+  // Next/previous controls
+  function plusTokyoSlides(n) {
+    showTokyoSlides(slideIndex += n);
+  }
+  
+  $('.prev.tokyo').click(function() { 
+    plusTokyoSlides(-1);
   });
 
-  $('.next').click(function() { 
-    plusSlides(1);
+  $('.next.tokyo').click(function() { 
+    plusTokyoSlides(1);
   });
 
-  function showSlides(n) {
+  function showTokyoSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("projectSlides");
-    var dots = document.getElementsByClassName("dot");
+    var slides = document.getElementsByClassName("tokyoSlide");
+    var dots = document.getElementsByClassName("tokyodot");
     if (n > slides.length) {slideIndex = 1} 
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
