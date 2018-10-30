@@ -239,4 +239,67 @@ $(function(){
     slides[slideIndex-1].style.display = "block"; 
     dots[slideIndex-1].className += " active";
   }
+
+  //nyc slide show 
+  showNycSlides(slideIndex);
+  // Next/previous controls
+  function plusNycSlides(n) {
+    showNycSlides(slideIndex += n);
+  }
+  
+  $('.prev.nyc').click(function() { 
+    plusNycSlides(-1);
+  });
+
+  $('.next.nyc').click(function() { 
+    plusNycSlides(1);
+  });
+
+  function showNycSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("nycSlide");
+    var dots = document.getElementsByClassName("nycdot");
+    if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block"; 
+    dots[slideIndex-1].className += " active";
+  }
+
+  //design slide show 
+  showDesignSlides(slideIndex);
+  // Next/previous controls
+  function plusDesignSlides(n) {
+    showDesignSlides(slideIndex += n);
+  }
+  
+  $('.prev.design').click(function() { 
+    plusDesignSlides(-1);
+  });
+
+  $('.next.design').click(function() { 
+    plusDesignSlides(1);
+  });
+
+  function showDesignSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("designSlide");
+    var dots = document.getElementsByClassName("designdot");
+    if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block"; 
+    dots[slideIndex-1].className += " active";
+  }
+
 });

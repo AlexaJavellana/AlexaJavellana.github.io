@@ -380,7 +380,7 @@ html, body {
   padding: 5px;
 }
 
-.serenitydot, .tokyodot {
+.serenitydot, .tokyodot, .nycdot, .designdot {
   cursor: pointer;
   height: 8px;
   width: 8px;
@@ -396,6 +396,14 @@ html, body {
 }
 
 .active, .tokyodot:hover {
+  background-color: #717171;
+}
+
+.active, .nycdot:hover {
+  background-color: #717171;
+}
+
+.active, .designdot:hover {
   background-color: #717171;
 }
 
@@ -424,6 +432,6 @@ html, body {
   border-radius: 3px 0 0 3px;
 }
 
-#serenityDots {
+.projectDots {
   padding: 5px;
 }
