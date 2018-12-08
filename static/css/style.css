@@ -372,13 +372,22 @@ html, body {
   display: none;
 }
 
-#serenitySlides, #designSlides, #tokyoSlides, #nycSlides {
+#serenitySlides, #tokyoSlides, #nycSlides {
   max-width: 455px;
   max-height: 190px;
   position: relative;
   margin: auto;
   padding: 5px;
 }
+
+#designSlides /*because the images design wise need to be longer for better resolution*/ {
+  max-width: 455px;
+  max-height: 250px;
+  position: relative;
+  margin: auto;
+  padding: 5px;
+}
+
 
 .serenitydot, .tokyodot, .nycdot, .designdot {
   cursor: pointer;
