@@ -5,6 +5,11 @@ html, body {
   max-height: 618px;
 }
 
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: UglyQua;
   src: url(./UglyQua.ttf);
@@ -25,7 +30,6 @@ html, body {
 }
 
 .writing {
-  /* height: 100%; */
   width: 60%;
   float: left;
 }
